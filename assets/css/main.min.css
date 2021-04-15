@@ -6396,6 +6396,8 @@ body {
         font-weight: 400;
         letter-spacing: 0.25em;
         text-transform: uppercase; }
+  #header .social {
+    padding-right: 1.5em; }
   #header .main {
     height: inherit;
     line-height: inherit;

@@ -7,14 +7,15 @@
   "license": "MIT",
   "scripts": {
     "start": "run-p dev:*",
-    "build": "run-s build:* post",
+    "build": "run-s gallery build:* post",
     "build:sass": "npx node-sass assets/sass/main.scss assets/css/main.min.css",
     "build:parcel": "npx parcel@1.12.3 build index.pug --public-url ./ --no-source-maps",
     "dev:sass": "npx node-sass assets/sass/main.scss assets/css/main.min.css --watch",
     "dev:parcel": "npx parcel index.pug",
     "css": "purifycss dist/main.*.css dist/*.html dist/*.js -o dist/bundle.css --info --min",
     "clean": "rm -r dist/*",
-    "post": "node post-dist.js"
+    "post": "node post-dist.js",
+    "gallery": "node gallery.js"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
