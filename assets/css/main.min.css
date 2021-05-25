@@ -6330,6 +6330,21 @@ table {
     table.alt tfoot {
       border-top: 0; }
 
+.supplier-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem; }
+  .supplier-logos > * {
+    max-width: 130px;
+    display: block;
+    border-bottom: 0;
+    flex-grow: 1;
+    flex-basis: 0; }
+  .supplier-logos img {
+    width: 130px; }
+
 /* Header */
 body {
   padding-top: 3.5em; }

@@ -1,0 +1,19 @@
+.supplier-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  > * {
+    max-width: 130px;
+    display: block;
+    border-bottom: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  img {
+    width: 130px;
+  }
+}
